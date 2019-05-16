@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#2b3499"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="15dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="240dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/logo_company" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/logo_kead" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:text="@string/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:text="@string/svcbegin"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/button_next"
+                    android:layout_gravity="center"
+                    android:textColor="#333"
+                    android:textSize="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@drawable/button_rr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <Button
+                    android:gravity="center"
+                    android:background="@drawable/button_lr"
+                    android:text="아파요"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" />
+                <Button
+                    android:gravity="center"
+                    android:background="@drawable/button_lr"
+                    android:text="STOP"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" />
+                <Button
+                    android:onClick="onClickPrev"
+                    android:gravity="center"
+                    android:background="@drawable/button_lr"
+                    android:text="이전으로"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <Button
+                    android:onClick="onClickHome"
+                    android:gravity="center"
+                    android:background="@drawable/button_lrb"
+                    android:text="Home"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="#f8b41c"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>

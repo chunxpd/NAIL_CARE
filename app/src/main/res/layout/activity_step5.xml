@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#2b3499"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="15dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="240dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/logo_company" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="288dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/logo_kead" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="80dp"
+                    android:textAlignment="center"
+                    android:text="@string/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:lineSpacingExtra="20dp"
+                        android:text="@string/step5"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/picture_sns"
+                        android:layout_width="800dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:onClick="onClickPrev"
+                android:src="@drawable/button_prev"
+                android:layout_width="50dp"
+                android:layout_height="85dp" />
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:onClick="onClickHome"
+                android:src="@drawable/button_home"
+                android:layout_width="50dp"
+                android:layout_height="85dp" />
+            <View
+                android:layout_width="50dp"
+                android:layout_height="85dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="#f8b41c"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>

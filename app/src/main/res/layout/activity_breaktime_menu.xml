@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#2b3499"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="15dp"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="240dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/logo_company" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="288dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/logo_kead" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                <ImageView
+                        android:onClick="onClickRefresh"
+                        android:id="@+id/imageButtonServiceRefresh"
+                        android:layout_width="350dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/button_refresh" />
+
+                    <ImageView
+                        android:id="@+id/imageButtonPrepare"
+                        android:layout_width="350dp"
+                        android:layout_height="250dp"
+                        android:onClick="onClickPrepare"
+                        android:src="@drawable/button_prepare" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageButtonServiceEnd"
+                        android:layout_width="350dp"
+                        android:layout_height="250dp"
+                        android:onClick="onClickEnd"
+                        android:src="@drawable/button_serviceend" />
+                    <ImageView
+                        android:id="@+id/imageButtonAway"
+                        android:layout_width="350dp"
+                        android:layout_height="250dp"
+                        android:onClick="onClickAway"
+                        android:src="@drawable/button_away" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#2b3499"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:background="#f8b41c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="#f8b41c"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+</LinearLayout>
